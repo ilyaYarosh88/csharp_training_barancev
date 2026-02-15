@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "addressbook-web-tests", "addressbook-web-tests.vbproj", "{909388D0-B24B-4425-9E9C-8403CEE317C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "addressbook-web-tests", "addressbook-web-tests.csproj", "{468FE205-9B41-4B6F-955C-3FD57007116D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{909388D0-B24B-4425-9E9C-8403CEE317C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{909388D0-B24B-4425-9E9C-8403CEE317C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{909388D0-B24B-4425-9E9C-8403CEE317C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{909388D0-B24B-4425-9E9C-8403CEE317C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468FE205-9B41-4B6F-955C-3FD57007116D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468FE205-9B41-4B6F-955C-3FD57007116D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468FE205-9B41-4B6F-955C-3FD57007116D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468FE205-9B41-4B6F-955C-3FD57007116D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4B030520-9BAA-48A0-B134-B454482947DA}
+		SolutionGuid = {93808D08-E02C-4E49-9216-2D1565E79891}
 	EndGlobalSection
 EndGlobal
