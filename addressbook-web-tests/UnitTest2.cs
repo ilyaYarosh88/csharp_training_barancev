@@ -19,10 +19,8 @@ namespace addressbook_web_tests
         [SetUp]
         public void SetupTest()
         {
-            var options = new FirefoxOptions();
-            options.BrowserExecutableLocation = @"C:\Program Files\Mozilla Firefox\firefox.exe";
-
-            driver = new FirefoxDriver(options);
+            
+            driver = new FirefoxDriver();
             baseURL = "http://localhost/addressbook/";
             verificationErrors = new StringBuilder();
         }
