@@ -1,6 +1,6 @@
 ﻿namespace WebAddressbookTests
 {
-    class ContactData
+    public class ContactData
     {
         private string firstName;
         private string lastName;       
