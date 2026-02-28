@@ -1,15 +1,17 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace WebAddressbookTests
 {
-    public class TestBase
+    public class ApplicationManager
     {
         protected IWebDriver driver;
-        private StringBuilder verificationErrors;
         protected string baseURL;
 
         protected LoginHelper loginHelper;
@@ -17,21 +19,15 @@ namespace WebAddressbookTests
         protected GroupHelper groupHelper;
         protected ContactHelper contactHelper;
 
-        [SetUp]
-        public void SetupTest()
+        public  ApplicationManager()
         {
-            driver = new FirefoxDriver();
-            baseURL = "http://localhost";
-            verificationErrors = new StringBuilder();
-
             loginHelper = new LoginHelper(driver);
             navigator = new NavigationHelper(driver, baseURL);
             groupHelper = new GroupHelper(driver);
             contactHelper = new ContactHelper(driver);
         }
 
-        [TearDown]
-        public void TeardownTest()
+        public void Stop()
         {
             try
             {
@@ -41,7 +37,16 @@ namespace WebAddressbookTests
             {
                 // Ignore errors if unable to close the browser
             }
-            Assert.AreEqual("", verificationErrors.ToString());
-        }       
+        }
+
+        public LoginHelper Auth { get; }        
+
+        public NavigationHelper Navigator { get; }
+
+        public GroupHelper GroupHelper { get; }
+        
+        
+        public ContactHelper ContactHelper { get; }
+        
     }
 }
