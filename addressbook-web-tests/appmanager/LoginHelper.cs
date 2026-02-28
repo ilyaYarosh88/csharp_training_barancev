@@ -1,11 +1,12 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 
 namespace WebAddressbookTests
 {    
     public class LoginHelper : HelperBase
     {
 
-        public LoginHelper(IWebDriver driver) : base(driver)
+        public LoginHelper(ApplicationManager manager) : base(manager)
         {
         }
 
