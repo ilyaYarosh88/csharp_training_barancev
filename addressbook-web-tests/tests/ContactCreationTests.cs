@@ -7,14 +7,22 @@ namespace WebAddressbookTests
     {     
         [Test]
         public void AddNewContactTest()
-        {            
-            app.Navigator.GoToAddContactPage();
+        {   
             ContactData contact = new ContactData();
             contact.FirstName = "TestFirstName";
             contact.LastName = "TestLastName";
-            app.Contacts
-                .FillContactForm(contact)
-                .SubmitContactCreation();
-        }    
+
+            app.Contacts.Create(contact);
+        }
+
+        [Test]
+        public void EmptyContactCreationTest()
+        {
+            ContactData contact = new ContactData();
+            contact.FirstName = "";
+            contact.LastName = "";
+
+            app.Contacts.Create(contact);
+        }
     }
 }

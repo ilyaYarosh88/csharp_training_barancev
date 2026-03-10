@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace WebAddressbookTests.tests
+namespace WebAddressbookTests
 {
     [TestFixture]
     public class GroupModificationTests : TestBase
@@ -8,9 +8,9 @@ namespace WebAddressbookTests.tests
         [Test]
         public void GroupModificationTest()
         {
-            GroupData newData = new GroupData("qwerty");
-            newData.Name = "rtyu";
-            newData.Footer = "yuio";
+            GroupData newData = new GroupData("GroupNameModified");
+            newData.Header = "HeaderModified";
+            newData.Footer = "FooterModified";
 
             app.Groups.Modify(1, newData);
         }
