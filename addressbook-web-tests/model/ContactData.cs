@@ -1,8 +1,4 @@
-﻿using OpenQA.Selenium.Remote;
-using System.Net;
-using System.Reflection;
-
-namespace WebAddressbookTests
+﻿namespace WebAddressbookTests
 {
     public class ContactData
     {
