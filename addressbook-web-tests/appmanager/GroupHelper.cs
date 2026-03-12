@@ -91,5 +91,11 @@ namespace WebAddressbookTests
             return this;
         }
 
+        public bool IsGroupPresent()
+        {
+            manager.Navigator.GoToGroupsPage();
+
+            return IsElementPresent(By.Name("selected[]"));
+        }
     }
 }

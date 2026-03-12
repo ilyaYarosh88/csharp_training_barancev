@@ -115,5 +115,12 @@ namespace WebAddressbookTests
             driver.FindElement(By.XPath("//input[@value='Delete']")).Click();
             return this;
         }
+
+        public bool IsContactPresent()
+        {
+            manager.Navigator.GoToHomePage();
+
+            return IsElementPresent(By.Name("selected[]"));
+        }
     }
 }
